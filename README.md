@@ -15,6 +15,8 @@ ssh root@149.28.76.116
 
 #### (2) deploy the environment in the server
 
+Pls don't use kitty terminal to run the following scripts. Better use WezTerm.
+
 ```bash
 wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/JakeJing/shsx/master/shadowsocks.sh
 
