@@ -13,7 +13,15 @@ ssh root@149.28.76.116
 # type in the pass (copy and paste from the Vultr instance)
 ```
 
-#### (2) deploy the environment in the server
+### (2) latest method
+
+```bash
+bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/sing-box-yg/main/sb.sh)
+```
+
+
+
+#### Retired installation solution: (2) deploy the environment in the server
 
 Pls don't use kitty terminal to run the following scripts. Better use WezTerm.
 
