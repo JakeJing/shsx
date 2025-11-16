@@ -19,7 +19,13 @@ ssh root@149.28.76.116
 bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/sing-box-yg/main/sb.sh)
 ```
 
+#### speed up
 
+```
+wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh"
+chmod +x tcp.sh
+./tcp.sh
+```
 
 #### Retired installation solution: (2) deploy the environment in the server
 
