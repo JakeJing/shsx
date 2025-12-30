@@ -27,6 +27,16 @@ chmod +x tcp.sh
 ./tcp.sh
 ```
 
+### (3) install wireguard
+
+you can install the wireguard with the `wireguard-install.sh` script. See also this [git repository](https://github.com/angristan/wireguard-install/tree/master), and [short video](https://www.youtube.com/shorts/1likZM_I9oY).
+```
+curl -O https://raw.githubusercontent.com/angristan/wireguard-install/refs/heads/master/wireguard-install.sh
+chmod +x wireguard-install.sh
+sudo ./wireguard-install.sh
+```
+
+
 #### Retired installation solution: (2) deploy the environment in the server
 
 Pls don't use kitty terminal to run the following scripts. Better use WezTerm.
