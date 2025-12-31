@@ -27,13 +27,13 @@ chmod +x tcp.sh
 ./tcp.sh
 ```
 
-**Note:** if you use hiddify to connect the vpn, gdrive cli may have some problem. You should run hiddify with root privilidge in the command line (go to Applications - Hiddify - right click and pkg content - MacOS).
+**Note:** if you use hiddify to connect the vpn, gdrive cli may have some problem. You should run hiddify with root privilidge in the command line (go to Applications - Hiddify - right click and show pkg contents - MacOS).
 
 ```
 sudo ./hiddyfy
 ```
 
-After this, you should switch to VPN model and turn on the Enable TSL Fragment. With this, you should be able to use gdrive in yoyr terminal.
+After this, you should **switch to VPN model** (not system vpn) and **turn on the Enable TSL Fragment**. With this, you should be able to use gdrive in your terminal.
   
 
 ### (3) install wireguard
