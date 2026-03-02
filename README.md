@@ -36,7 +36,7 @@ sudo ./hiddyfy
 After this, you should **switch to VPN model** (not system vpn) and **turn on the Enable TSL Fragment**. With this, you should be able to use gdrive in your terminal.
   
 
-### (3) install wireguard
+### (3) install wireguard (more stable connection for gdrive)
 
 Use the default IPv4 address, port (51820) and name.
 
@@ -45,9 +45,8 @@ Use the default IPv4 address, port (51820) and name.
 wget https://git.io/wireguard -O wireguard-install.sh && bash wireguard-install.sh
 ```
 
-#### Retired installation solution: (2) deploy the environment in the server
+#### Retired installations for wireguard and shadowsocks: (2) deploy the environment in the server
 
-- old retired script for installing wireguard.
 you can install the wireguard with the `wireguard-install.sh` script. See also this [git repository](https://github.com/angristan/wireguard-install/tree/master), and [short video](https://www.youtube.com/shorts/1likZM_I9oY).
 ```
 curl -O https://raw.githubusercontent.com/angristan/wireguard-install/refs/heads/master/wireguard-install.sh
