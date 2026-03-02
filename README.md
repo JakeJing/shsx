@@ -38,6 +38,15 @@ After this, you should **switch to VPN model** (not system vpn) and **turn on th
 
 ### (3) install wireguard (more stable connection for gdrive)
 
+Open the ports
+
+```
+sudo iptables -P INPUT ACCEPT
+sudo iptables -P FORWARD ACCEPT
+sudo iptables -P OUTPUT ACCEPT
+sudo iptables -F
+```
+
 Use the default IPv4 address, port (51820) and name.
 
 ```
