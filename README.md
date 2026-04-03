@@ -1,9 +1,9 @@
 # shsx
 repository to save shsx auto install script. It seems to support for only centos.
 
-### 1. deploy the Vultr server
+### 1. deploy the VPS server
 
-#### (1) create the vultr server
+#### (1) create the aliyun/digital ocean server
 
 You first need to create a server by yourself at [Vultr website](https://my.vultr.com/deploy/), and log in the newly created server via ssh (It may take a few minutes for the server to be ready).
 
@@ -38,6 +38,15 @@ After this, you should **switch to VPN model** (not system vpn) and **turn on th
 
 ### (3) install wireguard (more stable connection for gdrive)
 
+Open the port UDP: 51820 in your VPS network/firewall.
+
+You can install the wireguard with the `wireguard-install.sh` script. See also this [git repository](https://github.com/angristan/wireguard-install/tree/master), and [short video](https://www.youtube.com/shorts/1likZM_I9oY).
+```
+curl -O https://raw.githubusercontent.com/angristan/wireguard-install/refs/heads/master/wireguard-install.sh
+chmod +x wireguard-install.sh
+sudo ./wireguard-install.sh
+```
+
 Open the ports
 
 ```
@@ -47,21 +56,15 @@ sudo iptables -P OUTPUT ACCEPT
 sudo iptables -F
 ```
 
-Use the default IPv4 address, port (51820) and name.
+Use the default IPv4 address, port (51820) and name, and choose Google DNS server.
 
 ```
-# install wireguard
+# another script to install wireguard
 wget https://git.io/wireguard -O wireguard-install.sh && bash wireguard-install.sh
 ```
 
 #### Retired installations for wireguard and shadowsocks: (2) deploy the environment in the server
 
-you can install the wireguard with the `wireguard-install.sh` script. See also this [git repository](https://github.com/angristan/wireguard-install/tree/master), and [short video](https://www.youtube.com/shorts/1likZM_I9oY).
-```
-curl -O https://raw.githubusercontent.com/angristan/wireguard-install/refs/heads/master/wireguard-install.sh
-chmod +x wireguard-install.sh
-sudo ./wireguard-install.sh
-```
 
 Pls don't use kitty terminal to run the following scripts. Better use WezTerm.
 
